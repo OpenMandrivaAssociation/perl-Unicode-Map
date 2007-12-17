@@ -12,7 +12,6 @@ Group:		Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Unicode/%{module}-%{version}.tar.bz2
 Buildrequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module converts strings from and to 2-byte Unicode UCS2 format. All
