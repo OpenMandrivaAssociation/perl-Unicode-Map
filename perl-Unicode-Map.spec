@@ -1,7 +1,7 @@
 %define module	Unicode-Map
 %define name	perl-%{module}
 %define version	0.112
-%define release	%mkrel 14
+%define release	15
 
 Name:		%{name}
 Version:	%{version}
@@ -62,4 +62,65 @@ rm -rf %{buildroot}
 %{_mandir}/*/*
 %{_bindir}/*
 
+
+
+
+%changelog
+* Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 0.112-14mdv2012.0
++ Revision: 765796
+- rebuilt for perl-5.14.2
+
+* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 0.112-13
++ Revision: 764301
+- rebuilt for perl-5.14.x
+
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0.112-12
++ Revision: 667406
+- mass rebuild
+
+* Sun Aug 01 2010 Funda Wang <fwang@mandriva.org> 0.112-11mdv2011.0
++ Revision: 564589
+- rebuild for perl 5.12.1
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 0.112-10mdv2011.0
++ Revision: 555206
+- rebuild
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 0.112-9mdv2010.1
++ Revision: 426599
+- rebuild
+
+* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 0.112-8mdv2009.0
++ Revision: 224583
+- rebuild
+
+* Mon Jan 14 2008 Pixel <pixel@mandriva.com> 0.112-7mdv2008.1
++ Revision: 151403
+- rebuild for perl-5.10.0
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Fri Jan 12 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.112-6mdv2007.0
++ Revision: 107903
+- rebuild
+- Import perl-Unicode-Map
+
+* Wed Nov 30 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.112-5mdk
+- spec cleanup
+- %%mkrel
+- better url
+
+* Mon Nov 15 2004 Guillaume Rousse <guillomovitch@mandrake.org> 0.112-4mdk 
+- rebuild for new perl
+
+* Sat Jul 24 2004 Guillaume Rousse <guillomovitch@mandrake.org> 0.112-3mdk 
+- rpmbuildupdate aware
+
+* Wed Feb 25 2004 Guillaume Rousse <guillomovitch@mandrake.org> 0.112-2mdk
+- fixed dir ownership (distlint)
 
