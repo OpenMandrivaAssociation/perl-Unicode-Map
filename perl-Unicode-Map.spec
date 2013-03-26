@@ -1,3 +1,5 @@
+%define module Unicode-Map
+
 Name:		perl-%{module}
 Version:	0.112
 Release:	16
