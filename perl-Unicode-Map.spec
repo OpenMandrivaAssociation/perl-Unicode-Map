@@ -1,18 +1,12 @@
-%define module	Unicode-Map
-%define name	perl-%{module}
-%define version	0.112
-%define release	15
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{module}
+Version:	0.112
+Release:	16
 Summary:	Maps charsets from and to utf16 unicode
 License:	GPL or Artistic
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Unicode/%{module}-%{version}.tar.bz2
-Buildrequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+Url:		http://search.cpan.org/dist/%{module}
+Source0:	http://www.cpan.org/modules/by-module/Unicode/%{module}-%{version}.tar.bz2
+BuildRequires:	perl-devel
 
 %description
 This module converts strings from and to 2-byte Unicode UCS2 format. All
@@ -48,14 +42,9 @@ the Unicode::Map hierarchy
 %make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean 
-rm -rf %{buildroot}
-
 %files 
-%defattr(-,root,root)
 %doc README
 %{perl_vendorarch}/Unicode
 %{perl_vendorarch}/auto/Unicode
