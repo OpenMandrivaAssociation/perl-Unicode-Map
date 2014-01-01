@@ -1,13 +1,14 @@
 %define module Unicode-Map
+%define upstream_version 0.112
 
 Summary:	Maps charsets from and to utf16 unicode
 Name:		perl-%{module}
-Version:	0.112
-Release:	24
+Version:	%perl_convert_version %{upstream_version}
+Release:	25
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/Unicode/%{module}-%{version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Unicode/%{module}-%{upstream_version}.tar.bz2
 BuildRequires:	perl-devel
 
 %description
@@ -34,7 +35,7 @@ to install own specific character sets. Refer to mkmapfile or file REGISTRY in
 the Unicode::Map hierarchy
 
 %prep
-%setup -qn %{module}-%{version}
+%setup -qn %{module}-%{upstream_version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
