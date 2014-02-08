@@ -2,7 +2,7 @@
 
 Name:		perl-%{module}
 Version:	0.112
-Release:	20
+Release:	21
 Summary:	Maps charsets from and to utf16 unicode
 License:	GPL or Artistic
 Group:		Development/Perl
