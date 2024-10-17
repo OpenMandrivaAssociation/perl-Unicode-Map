@@ -7,7 +7,7 @@ Version:	0.112
 Release:	36
 License:	GPLv2 or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/Unicode/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 
