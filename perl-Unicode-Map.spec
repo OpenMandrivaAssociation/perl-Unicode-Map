@@ -4,7 +4,7 @@
 Summary:	Maps charsets from and to utf16 unicode
 Name:		perl-%{module}
 Version:	0.112
-Release:	36
+Release:	37
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}
