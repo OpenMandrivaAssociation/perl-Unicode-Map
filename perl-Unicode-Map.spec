@@ -9,6 +9,7 @@ License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/Unicode/%{module}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	perl-devel
 
 %description
